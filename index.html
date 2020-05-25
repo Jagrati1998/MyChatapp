@@ -1,7 +1,6 @@
 <html>
 <head>
     <title>Chat with socket.io and nod</title>
-     
     <style>
 
         #chat {
@@ -87,8 +86,10 @@
             </div>
         </div>
     </div>
-<script src="http://code.jquery.com/jquery-latest.min.js"></script>
-    <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+
+
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
     <script>
 jQuery(function($){
                 var socket = io.connect();
@@ -147,9 +148,5 @@ jQuery(function($){
                     $chat.append("<span class='msg'><b>" +data.nick + "</b>: " + data.msg + "<br/></span>");
                 }
             });</script>
-
-   
-    
 </body>
-
 </html>
